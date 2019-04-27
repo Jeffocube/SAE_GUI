@@ -6,3 +6,4 @@ Dashboard Display repository
 # Options for GUI creation
  1. [Kivy](https://kivy.org/#home) This software seems to be the most popular for creating UIs.
  2. [Pygame](https://github.com/pygame/pygame) Game creation software.
+ 3. pyqt5 is a professional looking option.
