@@ -28,6 +28,8 @@ int main(int argc, char **argv)
 	unsigned int spd = 0;
         unsigned int temp = 0;
 	unsigned int battery = 0;
+unsigned short v0 = 0;
+
 	int i;
 
 
@@ -84,6 +86,7 @@ int main(int argc, char **argv)
 		fprintf(stdout, "Speed:  %-3.3u mph\n", spd);
 		fprintf(stdout, "Temp:   %-3.3u C\n", temp);
 		fprintf(stdout, "Battery:%-3.3u %\n", battery);
+		fprintf(stdout, "v0:     %x V\n", battery);
 
                 fprintf(stdout, "\n");
                 //end testing
@@ -94,3 +97,4 @@ int main(int argc, char **argv)
         return 0;
 
 }
+
