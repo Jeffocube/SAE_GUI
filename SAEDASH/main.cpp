@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
                  return 1;
         }
 
-        w.run(v0, v1, spd, m1temp,inv1temp, m1curr, battery);
+        w.run(v0, v1, spd, m1temp, inv1temp, m1curr, battery, fault);
         QApplication::processEvents();
         int dlc = (frame.can_dlc > 8)? 8 : frame.can_dlc;
 

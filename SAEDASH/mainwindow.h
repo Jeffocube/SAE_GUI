@@ -13,7 +13,7 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-    void run(int, int, int, int, int, int, int);
+    void run(int, int, int, int, int, int, int, unsigned char);
     ~MainWindow();
 
 private:

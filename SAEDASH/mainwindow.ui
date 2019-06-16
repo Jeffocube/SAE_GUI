@@ -116,7 +116,7 @@ color: rgb(255, 255, 255);</string>
      <enum>QLCDNumber::Flat</enum>
     </property>
     <property name="value" stdset="0">
-     <double>0.700000000000000</double>
+     <double>1.000000000000000</double>
     </property>
     <property name="intValue" stdset="0">
      <number>1</number>
@@ -217,7 +217,7 @@ background-color: rgb(255, 0, 0);</string>
      </rect>
     </property>
     <property name="value">
-     <number>1</number>
+     <number>50</number>
     </property>
     <property name="textVisible">
      <bool>false</bool>
@@ -263,9 +263,9 @@ background-color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>40</y>
+      <y>0</y>
       <width>101</width>
-      <height>181</height>
+      <height>221</height>
      </rect>
     </property>
     <property name="font">
@@ -368,6 +368,111 @@ background-color: rgb(255, 0, 0);</string>
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="INVERTERFAULT">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>130</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>FAULT: INVERTER TEMP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MOTORTEMPFAULT">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>220</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>FAULT: MOTOR TEMP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CANSHORTFAULT">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>70</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>FAULT: CAN SHORT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HIGHVOLTAGEFAULT">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>310</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>FAULT: HIGH VOLTAGE</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OPENCANFAULT">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>0</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>FAULT: CAN OPEN CIRCUIT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>DRAW</zorder>
    <zorder>DRAWBAR</zorder>
@@ -387,6 +492,11 @@ background-color: rgb(255, 0, 0);</string>
    <zorder>label_9</zorder>
    <zorder>label_10</zorder>
    <zorder>REGENBAR</zorder>
+   <zorder>INVERTERFAULT</zorder>
+   <zorder>MOTORTEMPFAULT</zorder>
+   <zorder>CANSHORTFAULT</zorder>
+   <zorder>HIGHVOLTAGEFAULT</zorder>
+   <zorder>OPENCANFAULT</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -394,7 +504,7 @@ background-color: rgb(255, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

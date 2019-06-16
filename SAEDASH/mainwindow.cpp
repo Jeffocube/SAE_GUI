@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 }
-void MainWindow::run(int v0, int v1, int spd, int m1temp, int inv1temp, int m1curr, int battery)
+void MainWindow::run(int v0, int v1, int spd, int m1temp, int inv1temp, int m1curr, int battery, unsigned char FAULT)
 {
     if(m1curr > 0){
         ui->DRAW->display(static_cast<float>(m1curr)/10 * v1);
@@ -28,7 +28,23 @@ void MainWindow::run(int v0, int v1, int spd, int m1temp, int inv1temp, int m1cu
     ui->DRAWBAR->update();
     ui->REGENBAR->update();
     ui->batInd->display(static_cast<float>(battery)/10);
-
+    if(FAULT == 55)
+        ui->OPENCANFAULT->setVisible(true);
+    if(FAULT == 56)
+        ui->CANSHORTFAULT->setVisible(true);
+    if(FAULT == 8 || FAULT == 14)
+        ui->INVERTERFAULT->setVisible(true);
+    if(FAULT == 19 || FAULT == 20)
+        ui->MOTORTEMPFAULT->setVisible(true);
+    if(FAULT == 1)
+        ui->HIGHVOLTAGEFAULT->setVisible(true);
+    if(FAULT == 0){
+        ui->OPENCANFAULT->setVisible(false);
+        ui->CANSHORTFAULT->setVisible(false);
+        ui->INVERTERFAULT->setVisible(false);
+        ui->MOTORTEMPFAULT->setVisible(false);
+        ui->HIGHVOLTAGEFAULT->setVisible(false);
+    }
 }
 MainWindow::~MainWindow()
 {
