@@ -7,6 +7,7 @@ For the creation of our dashboard, we were tasked with finding a suitable tool f
  1. [Kivy](https://kivy.org/#home) This software seems to be the most popular for creating UIs.
  2. [Pygame](https://github.com/pygame/pygame) Game creation software.
  3. pyqt5 is a professional looking option.
+# Design Decisions
 In the end we decided on using QT Creator to develop our graphics used in our EV dashboard.
 A few factors contributed to our decision to use QT:
  1. QT Creator has the option to use C++ for the backend. This was important as we were already experienced with C++ and C languages.
