@@ -18,9 +18,7 @@ A few factors contributed to our decision to use QT:
 # How to use cansee
 Use: "wget http://skpang.co.uk/dl/cantest.tar" to obtain the source files needed to build the cansee program.
 
-Enter the command:
-
-tar xf cantest.tar 
+Enter the command: "tar xf cantest.tar"
 
 Change directories into linux-can-utils and transfer the cansee.c file into the directory.
 
