@@ -15,3 +15,12 @@ A few factors contributed to our decision to use QT:
  1. Add some custom graphics to our dashboard. Given our short history with QT, we were unable to create an elaborate dashboard. The resulting dashboard featured only the basic QT widgets such as loading bars and seven segment LCD numbers. Our ideal dashboard would contain more circular speedometers. 
  2. Develop in JavaScript or Python in order to utilize more widely used graphical tools.
  3. Clean up the display and optimize the design to display data in a more useful manner.
+# How to use cansee
+Use: "wget http://skpang.co.uk/dl/cantest.tar" to obtain the source files needed to build the cansee program.
+Enter the command:
+tar xf cantest.tar 
+Change directories into linux-can-utils and transfer the cansee.c file into the directory.
+Modify the make file and build the project.
+Follow the instructions found on [this website](http://skpang.co.uk/blog/archives/1165) to install PiCAN for the raspberry pi.
+Use: "./cansee" to start sniffing parsed can frames.
+Comments are provided in the source code to help with future projects involving sniffing can frames vio PiCAN.
