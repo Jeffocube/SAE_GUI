@@ -17,10 +17,17 @@ A few factors contributed to our decision to use QT:
  3. Clean up the display and optimize the design to display data in a more useful manner.
 # How to use cansee
 Use: "wget http://skpang.co.uk/dl/cantest.tar" to obtain the source files needed to build the cansee program.
+
 Enter the command:
+
 tar xf cantest.tar 
+
 Change directories into linux-can-utils and transfer the cansee.c file into the directory.
+
 Modify the make file and build the project.
+
 Follow the instructions found on [this website](http://skpang.co.uk/blog/archives/1165) to install PiCAN for the raspberry pi.
+
 Use: "./cansee" to start sniffing parsed can frames.
+
 Comments are provided in the source code to help with future projects involving sniffing can frames vio PiCAN.
